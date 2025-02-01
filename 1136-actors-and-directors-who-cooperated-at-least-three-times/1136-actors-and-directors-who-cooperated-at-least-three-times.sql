@@ -4,7 +4,7 @@ select
     director_id
 from
     ActorDirector
-GROUP BY 
+group by 
     actor_id, director_id
 having 
     count(timestamp) >= 3;
